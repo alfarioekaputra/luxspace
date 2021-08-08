@@ -9,7 +9,6 @@
                     <img src="/images/logo.svg" alt="logo" />
                 </div>
                 <div class="w-full"></div>
-
                 <!-- START: menu hamburger wrapper -->
                 <div class="w-auto">
                     <ul
@@ -17,17 +16,19 @@
                             fixed
                             bg-white
                             inset-0
-                            flex-col
-                            invisible
+                            flex flex-col
                             items-center
                             justify-center
-                            opacity-0
                             md:visible
                             md:flex-row
                             md:bg-transparent
                             md:relative
                             md:opacity-100
-                            md:flex
+                        "
+                        :class="
+                            menuOpen
+                                ? 'opacity-100 z-30'
+                                : 'invisible opacity-0'
                         "
                     >
                         <li class="mx-3 py-6 md:py-0">
@@ -80,7 +81,6 @@
                         <li class="ml-6 block md:hidden">
                             <button
                                 class="
-                                    relative
                                     flex
                                     z-50
                                     items-center
@@ -90,25 +90,49 @@
                                     text-black
                                     focus:outline-none
                                 "
+                                :class="
+                                    menuOpen
+                                        ? 'fixed top-0 right-0'
+                                        : 'relative'
+                                "
+                                @click="toogleMenu()"
                             >
-                                <svg
-                                    class="fill-current"
-                                    width="18"
-                                    height="17"
-                                    viewBox="0 0 18 17"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M15.9773 0.461304H1.04219C0.466585 0.461304 0 0.790267 0 1.19609C0 1.60192 0.466668 1.93088 1.04219 1.93088H15.9773C16.5529 1.93088 17.0195 1.60192 17.0195 1.19609C17.0195 0.790208 16.5529 0.461304 15.9773 0.461304Z"
-                                    />
-                                    <path
-                                        d="M15.9773 7.68802H1.04219C0.466585 7.68802 0 8.01698 0 8.42281C0 8.82864 0.466668 9.1576 1.04219 9.1576H15.9773C16.5529 9.1576 17.0195 8.82864 17.0195 8.42281C17.0195 8.01692 16.5529 7.68802 15.9773 7.68802Z"
-                                    />
-                                    <path
-                                        d="M15.9773 14.9147H1.04219C0.466585 14.9147 0 15.2437 0 15.6495C0 16.0553 0.466668 16.3843 1.04219 16.3843H15.9773C16.5529 16.3843 17.0195 16.0553 17.0195 15.6495C17.0195 15.2436 16.5529 14.9147 15.9773 14.9147Z"
-                                    />
-                                </svg>
+                                <template v-if="!menuOpen">
+                                    <svg
+                                        class="fill-current"
+                                        width="18"
+                                        height="17"
+                                        viewBox="0 0 18 17"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M15.9773 0.461304H1.04219C0.466585 0.461304 0 0.790267 0 1.19609C0 1.60192 0.466668 1.93088 1.04219 1.93088H15.9773C16.5529 1.93088 17.0195 1.60192 17.0195 1.19609C17.0195 0.790208 16.5529 0.461304 15.9773 0.461304Z"
+                                        />
+                                        <path
+                                            d="M15.9773 7.68802H1.04219C0.466585 7.68802 0 8.01698 0 8.42281C0 8.82864 0.466668 9.1576 1.04219 9.1576H15.9773C16.5529 9.1576 17.0195 8.82864 17.0195 8.42281C17.0195 8.01692 16.5529 7.68802 15.9773 7.68802Z"
+                                        />
+                                        <path
+                                            d="M15.9773 14.9147H1.04219C0.466585 14.9147 0 15.2437 0 15.6495C0 16.0553 0.466668 16.3843 1.04219 16.3843H15.9773C16.5529 16.3843 17.0195 16.0553 17.0195 15.6495C17.0195 15.2436 16.5529 14.9147 15.9773 14.9147Z"
+                                        />
+                                    </svg>
+                                </template>
+                                <template v-else>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="fill-current"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
+                                    </svg>
+                                </template>
                             </button>
                         </li>
                         <li class="ml-6">
@@ -192,9 +216,9 @@
                 <a
                     href=""
                     class="
-                        bg-pink-300
+                        bg-pink-400
                         text-black
-                        hover:bg-black hover:text-pink-300
+                        hover:bg-black hover:text-pink-400
                         rounded-full
                         px-8
                         py-3
@@ -212,8 +236,37 @@
 
         <!-- START: Section Hero | right side -->
         <div class="w-full inset-0 md:relative md:w-1/2">
-            <div class="relative heroimage">
-                <div class="overlay inset-0 bg-black opacity-30 z-10">sdsd</div>
+            <div class="relative hero-image">
+                <div class="overlay inset-0 bg-black opacity-30 z-10"></div>
+                <div class="overlay right-0 bottom-0 md:inset-0">
+                    <button class="video hero-cta focus:outline-none z-30">
+                        <!-- <div class="w-screen pb-56 md:w-88 relative z-50">
+                            <div class="absolute w-full h-full">
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/llsjl-_gIpQ"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div> -->
+                    </button>
+                </div>
+                <img
+                    class="
+                        absolute
+                        inset-0
+                        md:relative
+                        w-full
+                        h-full
+                        object-cover object-center
+                    "
+                    src="/images/hero-image.jpg"
+                    alt=""
+                />
             </div>
         </div>
         <!-- END: Section Hero | right side -->
@@ -234,6 +287,16 @@ export default {
         canRegister: Boolean,
         laravelVersion: String,
         phpVersion: String,
+    },
+    data() {
+        return {
+            menuOpen: false,
+        };
+    },
+    methods: {
+        toogleMenu() {
+            this.menuOpen = !this.menuOpen;
+        },
     },
 };
 </script>

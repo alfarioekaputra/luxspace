@@ -1,3 +1,4 @@
+const { colors } = require("tailwindcss/defaultTheme");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -12,6 +13,10 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ["'Open Sans', sans-serif"],
+            },
+            colors: {
+                blue: { ...colors.blue, 200: "#BCE7F0" },
+                pink: { ...colors.pink, 400: "#F9CADA" },
             },
         },
     },

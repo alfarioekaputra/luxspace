@@ -19584,6 +19584,16 @@ __webpack_require__.r(__webpack_exports__);
     canRegister: Boolean,
     laravelVersion: String,
     phpVersion: String
+  },
+  data: function data() {
+    return {
+      menuOpen: false
+    };
+  },
+  methods: {
+    toogleMenu: function toogleMenu() {
+      this.menuOpen = !this.menuOpen;
+    }
   }
 });
 
@@ -20932,66 +20942,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("header", {
+var _hoisted_1 = {
   "class": "absolute w-full z-50 px-4"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+};
+var _hoisted_2 = {
   "class": "container mx-auto py-10"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+};
+var _hoisted_3 = {
   "class": "flex flex-stretch items-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+};
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "w-56 flex items-center"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   src: "/images/logo.svg",
   alt: "logo"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "w-full"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: menu hamburger wrapper "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
   "class": "w-auto"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
-  "class": "\n                            fixed\n                            bg-white\n                            inset-0\n                            flex-col\n                            invisible\n                            items-center\n                            justify-center\n                            opacity-0\n                            md:visible\n                            md:flex-row\n                            md:bg-transparent\n                            md:relative\n                            md:opacity-100\n                            md:flex\n                        "
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
-  "class": "mx-3 py-6 md:py-0"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: "",
-  "class": "\n                                    text-black\n                                    hover:text-white hover:underline\n                                "
-}, "Showcase")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
-  "class": "mx-3 py-6 md:py-0"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: "",
-  "class": "\n                                    text-black\n                                    hover:text-white hover:underline\n                                "
-}, "Catalog")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
-  "class": "mx-3 py-6 md:py-0"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: "",
-  "class": "\n                                    text-black\n                                    hover:text-white hover:underline\n                                "
-}, "Delivery")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
-  "class": "mx-3 py-6 md:py-0"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: "",
-  "class": "\n                                    text-black\n                                    hover:text-white hover:underline\n                                "
-}, "Rewards")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: hamburger menu wrapper "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: hamburger icon and cart icon "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"mx-3 py-6 md:py-0\"><a href=\"\" class=\"\n                                    text-black\n                                    hover:text-white hover:underline\n                                \">Showcase</a></li><li class=\"mx-3 py-6 md:py-0\"><a href=\"\" class=\"\n                                    text-black\n                                    hover:text-white hover:underline\n                                \">Catalog</a></li><li class=\"mx-3 py-6 md:py-0\"><a href=\"\" class=\"\n                                    text-black\n                                    hover:text-white hover:underline\n                                \">Delivery</a></li><li class=\"mx-3 py-6 md:py-0\"><a href=\"\" class=\"\n                                    text-black\n                                    hover:text-white hover:underline\n                                \">Rewards</a></li>", 4);
+
+var _hoisted_11 = {
   "class": "w-auto"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
+};
+var _hoisted_12 = {
   "class": "flex items-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+};
+var _hoisted_13 = {
   "class": "ml-6 block md:hidden"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
-  "class": "\n                                    relative\n                                    flex\n                                    z-50\n                                    items-center\n                                    justiy-center\n                                    w-8\n                                    h-8\n                                    text-black\n                                    focus:outline-none\n                                "
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+};
+var _hoisted_14 = {
+  key: 0,
   "class": "fill-current",
   width: "18",
   height: "17",
   viewBox: "0 0 18 17",
   fill: "none",
   xmlns: "http://www.w3.org/2000/svg"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
   d: "M15.9773 0.461304H1.04219C0.466585 0.461304 0 0.790267 0 1.19609C0 1.60192 0.466668 1.93088 1.04219 1.93088H15.9773C16.5529 1.93088 17.0195 1.60192 17.0195 1.19609C17.0195 0.790208 16.5529 0.461304 15.9773 0.461304Z"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
   d: "M15.9773 7.68802H1.04219C0.466585 7.68802 0 8.01698 0 8.42281C0 8.82864 0.466668 9.1576 1.04219 9.1576H15.9773C16.5529 9.1576 17.0195 8.82864 17.0195 8.42281C17.0195 8.01692 16.5529 7.68802 15.9773 7.68802Z"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
   d: "M15.9773 14.9147H1.04219C0.466585 14.9147 0 15.2437 0 15.6495C0 16.0553 0.466668 16.3843 1.04219 16.3843H15.9773C16.5529 16.3843 17.0195 16.0553 17.0195 15.6495C17.0195 15.2436 16.5529 14.9147 15.9773 14.9147Z"
-})])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_18 = {
+  key: 1,
+  xmlns: "http://www.w3.org/2000/svg",
+  "class": "fill-current",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  stroke: "currentColor"
+};
+
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  "stroke-width": "2",
+  d: "M6 18L18 6M6 6l12 12"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
   "class": "ml-6"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
   "class": "\n                                    flex\n                                    items-center\n                                    justiy-center\n                                    w-8\n                                    h-8\n                                    text-black\n                                    focus:outline-none\n                                "
@@ -21018,18 +21055,29 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   r: "4",
   fill: "#F9CADA",
   "class": "cart-filled"
-})])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: hamburger icon and cart icon ")])])], -1
+})])])], -1
 /* HOISTED */
 );
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"flex items-center hero\"><!-- START: Section Hero | left side --><div class=\"\n                w-full\n                absolute\n                z-20\n                inset-0\n                md:relative md:w-1/2\n                text-center\n                flex flex-col\n                justify-center\n                hero-caption\n            \"><h1 class=\"text-3xl md:text-5xl leading-tight font-semibold\"> The Room <br class=\"\">You Have Dreaming </h1><h2 class=\"px-8 text-base md:px-0 md:text-lg my-6 tracking-wide\"> Kami menyediakan furniture berkelas yang <br class=\"hidden lg:block\"> membuat ruangan terasa homey </h2><div><a href=\"\" class=\"\n                        bg-pink-300\n                        text-black\n                        hover:bg-black hover:text-pink-300\n                        rounded-full\n                        px-8\n                        py-3\n                        mt-4\n                        inline-block\n                        flex-none\n                        transition\n                        duration-200\n                    \">Explore Now</a></div></div><!-- END: Section Hero | left side --><!-- START: Section Hero | right side --><div class=\"w-full inset-0 md:relative md:w-1/2\"><div class=\"relative heroimage\"><div class=\"overlay inset-0 bg-black opacity-30 z-10\">sdsd</div></div></div><!-- END: Section Hero | right side --></section>", 1);
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"flex items-center hero\"><!-- START: Section Hero | left side --><div class=\"\n                w-full\n                absolute\n                z-20\n                inset-0\n                md:relative md:w-1/2\n                text-center\n                flex flex-col\n                justify-center\n                hero-caption\n            \"><h1 class=\"text-3xl md:text-5xl leading-tight font-semibold\"> The Room <br class=\"\">You Have Dreaming </h1><h2 class=\"px-8 text-base md:px-0 md:text-lg my-6 tracking-wide\"> Kami menyediakan furniture berkelas yang <br class=\"hidden lg:block\"> membuat ruangan terasa homey </h2><div><a href=\"\" class=\"\n                        bg-pink-400\n                        text-black\n                        hover:bg-black hover:text-pink-400\n                        rounded-full\n                        px-8\n                        py-3\n                        mt-4\n                        inline-block\n                        flex-none\n                        transition\n                        duration-200\n                    \">Explore Now</a></div></div><!-- END: Section Hero | left side --><!-- START: Section Hero | right side --><div class=\"w-full inset-0 md:relative md:w-1/2\"><div class=\"relative hero-image\"><div class=\"overlay inset-0 bg-black opacity-30 z-10\"></div><div class=\"overlay right-0 bottom-0 md:inset-0\"><button class=\"video hero-cta focus:outline-none z-30\"><!-- &lt;div class=&quot;w-screen pb-56 md:w-88 relative z-50&quot;&gt;\n                            &lt;div class=&quot;absolute w-full h-full&quot;&gt;\n                                &lt;iframe\n                                    width=&quot;560&quot;\n                                    height=&quot;315&quot;\n                                    src=&quot;https://www.youtube.com/embed/llsjl-_gIpQ&quot;\n                                    title=&quot;YouTube video player&quot;\n                                    frameborder=&quot;0&quot;\n                                    allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot;\n                                    allowfullscreen\n                                &gt;&lt;/iframe&gt;\n                            &lt;/div&gt;\n                        &lt;/div&gt; --></button></div><img class=\"\n                        absolute\n                        inset-0\n                        md:relative\n                        w-full\n                        h-full\n                        object-cover object-center\n                    \" src=\"/images/hero-image.jpg\" alt=\"\"></div></div><!-- END: Section Hero | right side --></section>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
     title: "Welcome"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: header "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: section hero ")], 64
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: menu hamburger wrapper "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", {
+    "class": ["\n                            fixed\n                            bg-white\n                            inset-0\n                            flex flex-col\n                            items-center\n                            justify-center\n                            md:visible\n                            md:flex-row\n                            md:bg-transparent\n                            md:relative\n                            md:opacity-100\n                        ", $data.menuOpen ? 'opacity-100 z-30' : 'invisible opacity-0']
+  }, [_hoisted_7], 2
+  /* CLASS */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: hamburger menu wrapper "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: hamburger icon and cart icon "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+    "class": ["\n                                    flex\n                                    z-50\n                                    items-center\n                                    justiy-center\n                                    w-8\n                                    h-8\n                                    text-black\n                                    focus:outline-none\n                                ", $data.menuOpen ? 'fixed top-0 right-0' : 'relative'],
+    onClick: _cache[1] || (_cache[1] = function ($event) {
+      return $options.toogleMenu();
+    })
+  }, [!$data.menuOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", _hoisted_14, [_hoisted_15, _hoisted_16, _hoisted_17])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", _hoisted_18, [_hoisted_19]))], 2
+  /* CLASS */
+  )]), _hoisted_20])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: hamburger icon and cart icon ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero "), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: section hero ")], 64
   /* STABLE_FRAGMENT */
   );
 }
