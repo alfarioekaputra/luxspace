@@ -228,6 +228,7 @@
                         transition
                         duration-200
                     "
+                    @click="smoothScrool($event)"
                     >Explore Now</a
                 >
             </div>
@@ -261,6 +262,207 @@
         <!-- END: Section Hero | right side -->
     </section>
     <!-- END: section hero -->
+
+    <!-- START: Browse The Room -->
+    <section ref="browse-the-room" class="flex bg-gray-100 py-16 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-start mb-4">
+                <h3 class="text-2xl capitalize font-semibold">
+                    Browse The Room <br class="" />that we designed for you
+                </h3>
+            </div>
+            <div class="grid grid-rows-2 grid-cols-9 gap-4">
+                <!-- START: item browse the room 1 -->
+                <div
+                    class="relative col-span-9 row-span-1 md:col-span-4 card"
+                    style="height: 180px"
+                >
+                    <div class="card-shadow rounded-xl">
+                        <img
+                            src="/images/content/imagecategory1.jpg"
+                            alt=""
+                            class="
+                                w-full
+                                h-full
+                                object-cover
+                                overlay
+                                overflow-hidden
+                                rounded-xl
+                            "
+                        />
+                    </div>
+                    <div
+                        class="
+                            overlay
+                            left-0
+                            top-0
+                            bottom-0
+                            flex
+                            justify-center
+                            flex-col
+                            pl-48
+                            md:pl-72
+                        "
+                    >
+                        <h5 class="text-lg font-semibold">Living Room</h5>
+                        <span>18.309 items</span>
+                    </div>
+                    <a href="#" class="stretched-link">
+                        <!-- fake childre -->
+                    </a>
+                </div>
+                <!-- END: item browse the room 1 -->
+
+                <!-- START: item browse the room 2 -->
+                <div
+                    class="
+                        relative
+                        col-span-9
+                        row-span-1
+                        md:col-span-2 md:row-span-2
+                        card
+                    "
+                >
+                    <div class="card-shadow rounded-xl">
+                        <img
+                            src="/images/content/imagecategory3.jpg"
+                            alt=""
+                            class="
+                                w-full
+                                h-full
+                                object-cover
+                                overlay
+                                overflow-hidden
+                                rounded-xl
+                            "
+                        />
+                    </div>
+                    <div
+                        class="
+                            overlay
+                            inset-0
+                            md:bottom-auto
+                            flex
+                            justify-center
+                            md:items-center
+                            flex-col
+                            pl-48
+                            md:pl-0
+                            pt-0
+                            md:pt-12
+                        "
+                    >
+                        <h5 class="text-lg font-semibold">Decoration</h5>
+                        <span>77.392 items</span>
+                    </div>
+                    <a href="#" class="stretched-link">
+                        <!-- fake childre -->
+                    </a>
+                </div>
+                <!-- END: item browse the room 2 -->
+
+                <!-- START: item browse the room 3 -->
+                <div
+                    class="
+                        relative
+                        col-span-9
+                        row-span-1
+                        md:col-span-3 md:row-span-2
+                        card
+                    "
+                >
+                    <div class="card-shadow rounded-xl">
+                        <img
+                            src="/images/content/imagecategory4.jpg"
+                            alt=""
+                            class="
+                                w-full
+                                h-full
+                                object-cover
+                                overlay
+                                overflow-hidden
+                                rounded-xl
+                            "
+                        />
+                    </div>
+                    <div
+                        class="
+                            overlay
+                            inset-0
+                            md:bottom-auto
+                            flex
+                            justify-center
+                            md:items-center
+                            flex-col
+                            pl-48
+                            md:pl-0
+                            pt-0
+                            md:pt-12
+                        "
+                    >
+                        <h5 class="text-lg font-semibold">Bed Room</h5>
+                        <span>22.094 items</span>
+                    </div>
+                    <a href="#" class="stretched-link">
+                        <!-- fake childre -->
+                    </a>
+                </div>
+                <!-- END: item browse the room 3 -->
+
+                <!-- START: item browse the room 4 -->
+                <div class="relative col-span-9 row-span-1 md:col-span-4 card">
+                    <div class="card-shadow rounded-xl">
+                        <img
+                            src="/images/content/imagecategory2.jpg"
+                            alt=""
+                            class="
+                                w-full
+                                h-full
+                                object-cover
+                                overlay
+                                overflow-hidden
+                                rounded-xl
+                            "
+                        />
+                    </div>
+                    <div
+                        class="
+                            overlay
+                            left-0
+                            top-0
+                            bottom-0
+                            flex
+                            justify-center
+                            flex-col
+                            pl-48
+                            md:pl-72
+                        "
+                    >
+                        <h5 class="text-lg font-semibold">Children Room</h5>
+                        <span>300 items</span>
+                    </div>
+                    <a href="#" class="stretched-link">
+                        <!-- fake childre -->
+                    </a>
+                </div>
+                <!-- END: item browse the room 4 -->
+            </div>
+        </div>
+    </section>
+    <!-- END: Browse The Room -->
+    <!-- <div class="min-h-screen"></div> -->
+
+    <!-- START: Just Arrived -->
+    <section class="flex flex-col py-16">
+        <div class="container mx-auto mb-4">
+            <div class="flex justify-center text-center mb-4">
+                <h3 class="text-2xl capitalize font-semibold">
+                    Just Arrived<br />This Summer For You
+                </h3>
+            </div>
+        </div>
+    </section>
+    <!-- END: Just Arrived -->
 
     <!-- START: Modal -->
     <div
@@ -325,6 +527,13 @@ export default {
         },
         openModal() {
             this.modalOpen = !this.modalOpen;
+        },
+        smoothScrool(event) {
+            //untuk smooth scrool
+            event.preventDefault();
+            this.$refs["browse-the-room"].scrollIntoView({
+                behavior: "smooth",
+            });
         },
     },
 };

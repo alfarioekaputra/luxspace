@@ -19597,6 +19597,13 @@ __webpack_require__.r(__webpack_exports__);
     },
     openModal: function openModal() {
       this.modalOpen = !this.modalOpen;
+    },
+    smoothScrool: function smoothScrool(event) {
+      //untuk smooth scrool
+      event.preventDefault();
+      this.$refs["browse-the-room"].scrollIntoView({
+        behavior: "smooth"
+      });
     }
   }
 });
@@ -21066,27 +21073,44 @@ var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 var _hoisted_21 = {
   "class": "flex items-center hero"
 };
+var _hoisted_22 = {
+  "class": "\n                w-full\n                absolute\n                z-20\n                inset-0\n                md:relative md:w-1/2\n                text-center\n                flex flex-col\n                justify-center\n                hero-caption\n            "
+};
 
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"\n                w-full\n                absolute\n                z-20\n                inset-0\n                md:relative md:w-1/2\n                text-center\n                flex flex-col\n                justify-center\n                hero-caption\n            \"><h1 class=\"text-3xl md:text-5xl leading-tight font-semibold\"> The Room <br class=\"\">You Have Dreaming </h1><h2 class=\"px-8 text-base md:px-0 md:text-lg my-6 tracking-wide\"> Kami menyediakan furniture berkelas yang <br class=\"hidden lg:block\"> membuat ruangan terasa homey </h2><div><a href=\"\" class=\"\n                        bg-pink-400\n                        text-black\n                        hover:bg-black hover:text-pink-400\n                        rounded-full\n                        px-8\n                        py-3\n                        mt-4\n                        inline-block\n                        flex-none\n                        transition\n                        duration-200\n                    \">Explore Now</a></div></div>", 1);
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
+  "class": "text-3xl md:text-5xl leading-tight font-semibold"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" The Room "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", {
+  "class": ""
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("You Have Dreaming ")], -1
+/* HOISTED */
+);
 
-var _hoisted_23 = {
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", {
+  "class": "px-8 text-base md:px-0 md:text-lg my-6 tracking-wide"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Kami menyediakan furniture berkelas yang "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", {
+  "class": "hidden lg:block"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" membuat ruangan terasa homey ")], -1
+/* HOISTED */
+);
+
+var _hoisted_25 = {
   "class": "w-full inset-0 md:relative md:w-1/2"
 };
-var _hoisted_24 = {
+var _hoisted_26 = {
   "class": "relative hero-image"
 };
 
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "overlay inset-0 bg-black opacity-30 z-10"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_26 = {
+var _hoisted_28 = {
   "class": "overlay right-0 bottom-0 md:inset-0"
 };
 
-var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "\n                        absolute\n                        inset-0\n                        md:relative\n                        w-full\n                        h-full\n                        object-cover object-center\n                    ",
   src: "/images/hero-image.jpg",
   alt: ""
@@ -21094,12 +21118,31 @@ var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 /* HOISTED */
 );
 
-var _hoisted_28 = {
+var _hoisted_30 = {
+  ref: "browse-the-room",
+  "class": "flex bg-gray-100 py-16 px-4"
+};
+
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container mx-auto\"><div class=\"flex flex-start mb-4\"><h3 class=\"text-2xl capitalize font-semibold\"> Browse The Room <br class=\"\">that we designed for you </h3></div><div class=\"grid grid-rows-2 grid-cols-9 gap-4\"><!-- START: item browse the room 1 --><div class=\"relative col-span-9 row-span-1 md:col-span-4 card\" style=\"height:180px;\"><div class=\"card-shadow rounded-xl\"><img src=\"/images/content/imagecategory1.jpg\" alt=\"\" class=\"\n                                w-full\n                                h-full\n                                object-cover\n                                overlay\n                                overflow-hidden\n                                rounded-xl\n                            \"></div><div class=\"\n                            overlay\n                            left-0\n                            top-0\n                            bottom-0\n                            flex\n                            justify-center\n                            flex-col\n                            pl-48\n                            md:pl-72\n                        \"><h5 class=\"text-lg font-semibold\">Living Room</h5><span>18.309 items</span></div><a href=\"#\" class=\"stretched-link\"><!-- fake childre --></a></div><!-- END: item browse the room 1 --><!-- START: item browse the room 2 --><div class=\"\n                        relative\n                        col-span-9\n                        row-span-1\n                        md:col-span-2 md:row-span-2\n                        card\n                    \"><div class=\"card-shadow rounded-xl\"><img src=\"/images/content/imagecategory3.jpg\" alt=\"\" class=\"\n                                w-full\n                                h-full\n                                object-cover\n                                overlay\n                                overflow-hidden\n                                rounded-xl\n                            \"></div><div class=\"\n                            overlay\n                            inset-0\n                            md:bottom-auto\n                            flex\n                            justify-center\n                            md:items-center\n                            flex-col\n                            pl-48\n                            md:pl-0\n                            pt-0\n                            md:pt-12\n                        \"><h5 class=\"text-lg font-semibold\">Decoration</h5><span>77.392 items</span></div><a href=\"#\" class=\"stretched-link\"><!-- fake childre --></a></div><!-- END: item browse the room 2 --><!-- START: item browse the room 3 --><div class=\"\n                        relative\n                        col-span-9\n                        row-span-1\n                        md:col-span-3 md:row-span-2\n                        card\n                    \"><div class=\"card-shadow rounded-xl\"><img src=\"/images/content/imagecategory4.jpg\" alt=\"\" class=\"\n                                w-full\n                                h-full\n                                object-cover\n                                overlay\n                                overflow-hidden\n                                rounded-xl\n                            \"></div><div class=\"\n                            overlay\n                            inset-0\n                            md:bottom-auto\n                            flex\n                            justify-center\n                            md:items-center\n                            flex-col\n                            pl-48\n                            md:pl-0\n                            pt-0\n                            md:pt-12\n                        \"><h5 class=\"text-lg font-semibold\">Bed Room</h5><span>22.094 items</span></div><a href=\"#\" class=\"stretched-link\"><!-- fake childre --></a></div><!-- END: item browse the room 3 --><!-- START: item browse the room 4 --><div class=\"relative col-span-9 row-span-1 md:col-span-4 card\"><div class=\"card-shadow rounded-xl\"><img src=\"/images/content/imagecategory2.jpg\" alt=\"\" class=\"\n                                w-full\n                                h-full\n                                object-cover\n                                overlay\n                                overflow-hidden\n                                rounded-xl\n                            \"></div><div class=\"\n                            overlay\n                            left-0\n                            top-0\n                            bottom-0\n                            flex\n                            justify-center\n                            flex-col\n                            pl-48\n                            md:pl-72\n                        \"><h5 class=\"text-lg font-semibold\">Children Room</h5><span>300 items</span></div><a href=\"#\" class=\"stretched-link\"><!-- fake childre --></a></div><!-- END: item browse the room 4 --></div></div>", 1);
+
+var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "flex flex-col py-16"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "container mx-auto mb-4"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "flex justify-center text-center mb-4"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
+  "class": "text-2xl capitalize font-semibold"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Just Arrived"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("This Summer For You ")])])])], -1
+/* HOISTED */
+);
+
+var _hoisted_33 = {
   key: 0,
   "class": "\n            fixed\n            inset-0\n            z-40\n            flex\n            items-center\n            justify-center\n            w-100\n            min-h-screen\n        "
 };
 
-var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "bg-white p-0 md:p-6 z-10"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "w-screen pb-56 md:w-88 relative z-50"
@@ -21133,17 +21176,25 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, [!$data.menuOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", _hoisted_14, [_hoisted_15, _hoisted_16, _hoisted_17])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", _hoisted_18, [_hoisted_19]))], 2
   /* CLASS */
-  )]), _hoisted_20])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: hamburger icon and cart icon ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero | left side "), _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Section Hero | left side "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero | right side "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
-    "class": "video hero-cta focus:outline-none z-30",
+  )]), _hoisted_20])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: hamburger icon and cart icon ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero | left side "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_22, [_hoisted_23, _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    href: "",
+    "class": "\n                        bg-pink-400\n                        text-black\n                        hover:bg-black hover:text-pink-400\n                        rounded-full\n                        px-8\n                        py-3\n                        mt-4\n                        inline-block\n                        flex-none\n                        transition\n                        duration-200\n                    ",
     onClick: _cache[2] || (_cache[2] = function ($event) {
+      return $options.smoothScrool($event);
+    })
+  }, "Explore Now")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Section Hero | left side "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero | right side "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+    "class": "video hero-cta focus:outline-none z-30",
+    onClick: _cache[3] || (_cache[3] = function ($event) {
       return $options.openModal();
     })
-  })]), _hoisted_27])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Section Hero | right side ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: section hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Modal "), $data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  })]), _hoisted_29])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Section Hero | right side ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: section hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Browse The Room "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_30, [_hoisted_31], 512
+  /* NEED_PATCH */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Browse The Room "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"min-h-screen\"></div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Just Arrived "), _hoisted_32, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Just Arrived "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Modal "), $data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
     "class": "fixed inset-0 bg-black opacity-35",
-    onClick: _cache[3] || (_cache[3] = function ($event) {
+    onClick: _cache[4] || (_cache[4] = function ($event) {
       return $data.modalOpen = false;
     })
-  }), _hoisted_29])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Modal ")], 64
+  }), _hoisted_34])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Modal ")], 64
   /* STABLE_FRAGMENT */
   );
 }
