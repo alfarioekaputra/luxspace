@@ -19587,12 +19587,16 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      menuOpen: false
+      menuOpen: false,
+      modalOpen: false
     };
   },
   methods: {
     toogleMenu: function toogleMenu() {
       this.menuOpen = !this.menuOpen;
+    },
+    openModal: function openModal() {
+      this.modalOpen = !this.modalOpen;
     }
   }
 });
@@ -21059,7 +21063,59 @@ var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 /* HOISTED */
 );
 
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"flex items-center hero\"><!-- START: Section Hero | left side --><div class=\"\n                w-full\n                absolute\n                z-20\n                inset-0\n                md:relative md:w-1/2\n                text-center\n                flex flex-col\n                justify-center\n                hero-caption\n            \"><h1 class=\"text-3xl md:text-5xl leading-tight font-semibold\"> The Room <br class=\"\">You Have Dreaming </h1><h2 class=\"px-8 text-base md:px-0 md:text-lg my-6 tracking-wide\"> Kami menyediakan furniture berkelas yang <br class=\"hidden lg:block\"> membuat ruangan terasa homey </h2><div><a href=\"\" class=\"\n                        bg-pink-400\n                        text-black\n                        hover:bg-black hover:text-pink-400\n                        rounded-full\n                        px-8\n                        py-3\n                        mt-4\n                        inline-block\n                        flex-none\n                        transition\n                        duration-200\n                    \">Explore Now</a></div></div><!-- END: Section Hero | left side --><!-- START: Section Hero | right side --><div class=\"w-full inset-0 md:relative md:w-1/2\"><div class=\"relative hero-image\"><div class=\"overlay inset-0 bg-black opacity-30 z-10\"></div><div class=\"overlay right-0 bottom-0 md:inset-0\"><button class=\"video hero-cta focus:outline-none z-30\"><!-- &lt;div class=&quot;w-screen pb-56 md:w-88 relative z-50&quot;&gt;\n                            &lt;div class=&quot;absolute w-full h-full&quot;&gt;\n                                &lt;iframe\n                                    width=&quot;560&quot;\n                                    height=&quot;315&quot;\n                                    src=&quot;https://www.youtube.com/embed/llsjl-_gIpQ&quot;\n                                    title=&quot;YouTube video player&quot;\n                                    frameborder=&quot;0&quot;\n                                    allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot;\n                                    allowfullscreen\n                                &gt;&lt;/iframe&gt;\n                            &lt;/div&gt;\n                        &lt;/div&gt; --></button></div><img class=\"\n                        absolute\n                        inset-0\n                        md:relative\n                        w-full\n                        h-full\n                        object-cover object-center\n                    \" src=\"/images/hero-image.jpg\" alt=\"\"></div></div><!-- END: Section Hero | right side --></section>", 1);
+var _hoisted_21 = {
+  "class": "flex items-center hero"
+};
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"\n                w-full\n                absolute\n                z-20\n                inset-0\n                md:relative md:w-1/2\n                text-center\n                flex flex-col\n                justify-center\n                hero-caption\n            \"><h1 class=\"text-3xl md:text-5xl leading-tight font-semibold\"> The Room <br class=\"\">You Have Dreaming </h1><h2 class=\"px-8 text-base md:px-0 md:text-lg my-6 tracking-wide\"> Kami menyediakan furniture berkelas yang <br class=\"hidden lg:block\"> membuat ruangan terasa homey </h2><div><a href=\"\" class=\"\n                        bg-pink-400\n                        text-black\n                        hover:bg-black hover:text-pink-400\n                        rounded-full\n                        px-8\n                        py-3\n                        mt-4\n                        inline-block\n                        flex-none\n                        transition\n                        duration-200\n                    \">Explore Now</a></div></div>", 1);
+
+var _hoisted_23 = {
+  "class": "w-full inset-0 md:relative md:w-1/2"
+};
+var _hoisted_24 = {
+  "class": "relative hero-image"
+};
+
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "overlay inset-0 bg-black opacity-30 z-10"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_26 = {
+  "class": "overlay right-0 bottom-0 md:inset-0"
+};
+
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "\n                        absolute\n                        inset-0\n                        md:relative\n                        w-full\n                        h-full\n                        object-cover object-center\n                    ",
+  src: "/images/hero-image.jpg",
+  alt: ""
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_28 = {
+  key: 0,
+  "class": "\n            fixed\n            inset-0\n            z-40\n            flex\n            items-center\n            justify-center\n            w-100\n            min-h-screen\n        "
+};
+
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "bg-white p-0 md:p-6 z-10"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "w-screen pb-56 md:w-88 relative z-50"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "absolute w-full h-full"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("iframe", {
+  width: "100%",
+  height: "100%",
+  src: "https://www.youtube.com/embed/llsjl-_gIpQ",
+  title: "YouTube video player",
+  frameborder: "0",
+  allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+  allowfullscreen: ""
+})])])], -1
+/* HOISTED */
+);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
@@ -21077,7 +21133,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, [!$data.menuOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", _hoisted_14, [_hoisted_15, _hoisted_16, _hoisted_17])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", _hoisted_18, [_hoisted_19]))], 2
   /* CLASS */
-  )]), _hoisted_20])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: hamburger icon and cart icon ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero "), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: section hero ")], 64
+  )]), _hoisted_20])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: hamburger icon and cart icon ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero | left side "), _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Section Hero | left side "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Section Hero | right side "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+    "class": "video hero-cta focus:outline-none z-30",
+    onClick: _cache[2] || (_cache[2] = function ($event) {
+      return $options.openModal();
+    })
+  })]), _hoisted_27])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Section Hero | right side ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: section hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" START: Modal "), $data.modalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+    "class": "fixed inset-0 bg-black opacity-35",
+    onClick: _cache[3] || (_cache[3] = function ($event) {
+      return $data.modalOpen = false;
+    })
+  }), _hoisted_29])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" END: Modal ")], 64
   /* STABLE_FRAGMENT */
   );
 }

@@ -18,6 +18,12 @@ module.exports = {
                 blue: { ...colors.blue, 200: "#BCE7F0" },
                 pink: { ...colors.pink, 400: "#F9CADA" },
             },
+            opacity: {
+                35: "0.35",
+            },
+            spacing: {
+                88: "22rem",
+            },
         },
     },
 
